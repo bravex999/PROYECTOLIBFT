@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/28 16:56:33 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/09/28 18:14:26 by chnaranj         ###   ########.fr       */
+/*   Created: 2024/09/28 17:36:45 by chnaranj          #+#    #+#             */
+/*   Updated: 2024/09/28 18:18:22 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 
-int	ft_isdigit(int c)
+int	ft_isalnum(int c)
 {
-	if (c >= '0' && c <= '9')
+	if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z')
+		|| (c >= 'a' && c <= 'z'))
 		return (1);
 	return (0);
 }
 /*
-int	main(void)
+int main ()
 {
-	int	c;
-	
-	c = '7';
+	int c;
+	c = '.';
 
-	int	result;
-	
-	result = ft_isdigit(c);
-	write(1, &(char){result+'0'}, 1);
+	int result;
+
+	result = ft_isalnum(c);
+	write(1,&(char){result + '0'}, 1);
+	return (0);
 }*/
