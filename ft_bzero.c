@@ -6,7 +6,7 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 15:34:03 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/09/30 16:25:38 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/09/30 16:28:50 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <strings.h>
@@ -36,8 +36,8 @@ int	main()
 	n = 18;
 	ft_bzero(s, n);
 	return (0);
-}*/
-/*
+}
+
 int main()
 {
 	char	s[] = "HOLA COMO TE VA LA MAÑANA DE HOY";

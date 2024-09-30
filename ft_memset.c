@@ -6,7 +6,7 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 13:36:27 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/09/30 15:22:26 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/09/30 16:30:10 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,22 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char letter;
-	size_t i;
-	char *ptr;
+	unsigned char	letter;
+	size_t			i;
+	char			*ptr;
 
 	ptr = (char *) s;
 	letter = (unsigned char) c;
 	i = 0;
-	while(i < n)
+	while (i < n)
 	{
 		ptr[i] = letter;
 		i++;
 	}
 	ptr[i] = '\0';
 	return (s);
-}/*
+}
+/*
 int main ()
 {
 	char s[20];
