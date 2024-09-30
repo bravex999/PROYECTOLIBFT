@@ -6,7 +6,7 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 13:36:27 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/09/30 15:20:50 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/09/30 15:22:26 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	ptr[i] = '\0';
 	return (s);
-}
-
+}/*
 int main ()
 {
 	char s[20];
@@ -40,4 +39,4 @@ int main ()
 	c = 'R';
 	printf("%s",(char*) ft_memset(s, c, n));
 	return (0);
-}
+}*/
