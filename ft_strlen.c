@@ -1,30 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/30 11:32:09 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/09/30 13:28:42 by chnaranj         ###   ########.fr       */
+/*   Created: 2024/09/30 12:03:31 by chnaranj          #+#    #+#             */
+/*   Updated: 2024/09/30 13:33:12 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
 #include <unistd.h>
+#include <stdio.h>
 
-int	ft_isprint(int c)
+size_t	ft_strlen(const char *str)
 {
-	if (c >= ' ' && c <= '~')
-		return (1);
-	return (0);
-}/*
-int main(void)
-{
-	int c;
-	char result;
+	size_t		len;
+	const char	*s;
 
-	c = 'u';
-	result = ft_isprint(c);
-	write(1, &(char){result + '0'}, 1);
+	s = str;
+	len = 0;
+	if (s)
+	{
+		while (s[len] != '\0')
+		{
+			len++;
+		}
+	}
+	return (len);
+}
+/*	
+int	main ()
+{
+	const char str[] = "Hola como estas";
+
+	printf("%zu", ft_strlen(str));
 	return (0);
 }*/
