@@ -6,7 +6,7 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 13:36:27 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/09/30 15:14:35 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/09/30 15:19:53 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ void	*ft_memset(void *s, int c, size_t n)
 		i++;
 	}
 	ptr[i] = '\0';
-	return (s);
+	:wqreturn (s);
 }
-/*
+
 int main ()
 {
 	char s[20];
@@ -38,6 +38,6 @@ int main ()
 	size_t n;
 	n = 15;
 	c = 'R';
-	printf("%s", ft_memset(s, c, n));
+	printf("%s",(char*) ft_memset(s, c, n));
 	return (0);
-}*/
+}
