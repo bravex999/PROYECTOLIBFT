@@ -6,7 +6,7 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 11:14:35 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/10/01 13:30:27 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/10/01 13:37:38 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,14 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_src = ft_strlen(src);
 	return(size_src);
 }
+/*
 int main()
 {
-	char dst[0];
+	char dst[11];
 	const char *src = "Hola como estas Christian";
 	size_t result;
 	result = ft_strlcpy(dst, src, sizeof(dst));
 	printf("%zu", result);
 	printf("%s", dst);
 	return (0);
-}
-
-
-
+}*/
