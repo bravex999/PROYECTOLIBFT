@@ -6,11 +6,14 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 13:55:21 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/10/01 15:55:20 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:19:07 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-size_t	strlcat(char *dst, const char *src, size_t size)
+#include "libft.h"
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t		i;
 	size_t		j;
@@ -34,4 +37,13 @@ size_t	strlcat(char *dst, const char *src, size_t size)
 	}
 	dst[i+j] = '\0';
 	return (dst_size + ft_strlen(src));
+}
+
+int	main ()
+{
+	char dst[30] = "holA";
+	const char *src = "Hola como estas";
+	printf("%zu",ft_strlcat(dst, src, sizeof(dst)));
+	printf("%s", dst);
+	return(0);
 }
