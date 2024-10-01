@@ -6,13 +6,11 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 12:03:31 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/09/30 13:33:12 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/10/01 12:35:30 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {
