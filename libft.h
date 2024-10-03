@@ -7,6 +7,7 @@
 #include <stdio.h>
 void	*ft_memmove(void *dest, const void *src, size_t len);
 size_t	ft_strlen(const char *s);
+int ft_toupper(int c);
 
 
 #endif

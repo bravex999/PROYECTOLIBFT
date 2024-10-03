@@ -3,7 +3,7 @@ NAME = libft.a
 CC = cc
 CFLAGS  = -Wall -Wextra -Werror
 
-SRCS = ft_memmove.c 
+SRCS = ft_memmove.c ft_toupper.c
 OBJS = $(SRCS:.c=.o)
 
 all : $(NAME)
