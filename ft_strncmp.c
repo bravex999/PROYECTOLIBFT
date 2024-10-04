@@ -14,7 +14,7 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
         return (0);
     return (s1[i] - s2[i]);
 }
-
+/*
 int main ()
 {
     char    s1 [] = "holaa";
@@ -23,14 +23,4 @@ int main ()
     n = 4;
     printf("%d", ft_strncmp(s1, s2, n));
     return (0);
-}
-
-
-
-
-    
-    
-
-    
-             
-
+}*/
