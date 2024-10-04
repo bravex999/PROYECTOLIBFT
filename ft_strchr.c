@@ -1,3 +1,5 @@
+#include "libft.h"
+
 char    *ft_strchr(char *s, int c)
 {
     int i;
@@ -12,3 +14,13 @@ char    *ft_strchr(char *s, int c)
     }    
     return (NULL);
 }
+
+int main()
+{
+    char    s[] = "Hola como estas";
+    int c;
+    c = 'm';
+    printf("%s", ft_strchr(s, c));
+    return (0);
+}
+    
