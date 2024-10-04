@@ -1,0 +1,32 @@
+#include "libft.h"
+
+void    *ft_memchr(const void *s, int c, size_t n)
+{
+    unsigned char *str;
+    size_t  i;
+        
+    str = (unsigned char *) s;
+    i = 0;
+    if (!s || n == 0 ) 
+        return (NULL);
+    while (i < n && str[i] != (unsigned char) c)
+        i++;
+    if (i < n && str[i] == c)
+        return ((void *)&str[i]);
+    return (NULL);
+}
+/*
+int main()
+{
+    char    s[] = "Hola como estas";
+    int c;
+    c = 'o';
+    size_t  n;
+    n = 1;
+    void *result;
+    result = ft_memchr(s, c, n);
+    if (result != NULL)
+        printf("%s", (unsigned char *) result);
+    else
+        printf("%s", "NULL");
+}*/
