@@ -1,12 +1,14 @@
 NAME = libft.a
 
 CC = cc
+
 CFLAGS  = -Wall -Wextra -Werror
 
 SRCS =  ft_memmove.c \
 		ft_toupper.c \
 		ft_strrchr.c \
-		ft_strlen.c \
+		ft_strlen.c
+
 OBJS = $(SRCS:.c=.o)
 
 all : $(NAME)
@@ -14,15 +16,15 @@ all : $(NAME)
 $(NAME) : $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-%.o: %.c
+%.o : %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-clean:
+clean :
 	rm -f $(OBJS)
 
-fclean: clean
+fclean : clean
 	rm -f $(NAME)
 
-re: fclean all
+re : fclean all
 
 .PHONY: all clean fclean re
