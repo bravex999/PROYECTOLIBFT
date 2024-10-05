@@ -6,25 +6,19 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 12:03:31 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/10/01 12:35:30 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/10/05 17:37:16 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+size_t	ft_strlen(const char *s)
 {
 	size_t		len;
-	const char	*s;
 
-	s = str;
 	len = 0;
-	if (s)
+	while (s[len] != '\0')
 	{
-		while (s[len] != '\0')
-		{
-			len++;
-		}
+		len++;
 	}
 	return (len);
 }

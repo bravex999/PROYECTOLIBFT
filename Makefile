@@ -3,13 +3,16 @@ NAME = libft.a
 CC = cc
 CFLAGS  = -Wall -Wextra -Werror
 
-SRCS = ft_memmove.c ft_toupper.c
+SRCS =  ft_memmove.c \
+		ft_toupper.c \
+		ft_strrchr.c \
+		ft_strlen.c \
 OBJS = $(SRCS:.c=.o)
 
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	@ar rcs $(NAME) $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
