@@ -6,7 +6,7 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 11:14:35 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/10/01 13:37:38 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/10/05 13:33:40 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t size_src;
+	size_t		size_src;
 	const char	*s;
 	char		*d;
 	size_t		i;
@@ -22,7 +22,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	d = dst;
 	s = src;
 	i = 0;
-	if((!dst) || (!src))
+	if ((!dst) || (!src))
 		return (0);
 	if (size == '\0')
 		return (0);
@@ -33,7 +33,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	d[i] = '\0';
 	size_src = ft_strlen(src);
-	return(size_src);
+	return (size_src);
 }
 /*
 int main()
