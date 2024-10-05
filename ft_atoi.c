@@ -24,11 +24,11 @@ int ft_atoi(const char *nptr)
     }
     result = sign * result;
     return (result);
-}
+}/*
 int main(int argc, char *argv[])
 {
     (void)argc;
 
     printf ("%d", ft_atoi(argv[1]));
     return (0);
-}
+}*/
