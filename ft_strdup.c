@@ -19,9 +19,10 @@ char *ft_strdup(const char *s)
 	dup[i] = '\0';
 	return (dup);
 }
+/*
 int  main ()
 {
 	const char	*s = "hola como estas";
 	printf("%s", ft_strdup(s));
 	return (0);
-}
+}*/
