@@ -8,14 +8,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 
     if (!s1 || !set)
         return (NULL);
-
     start = 0;
     end = ft_strlen(s1);
 
     while (s1[start] && ft_strchr(set, s1[start]))
-        start++;
+			start++;
     while (end > start && ft_strchr(set, s1[end - 1]))
-        end--;
+			end--;
 	result = (char *)malloc(end - start + 1);
     if (!result)
         return (NULL);
