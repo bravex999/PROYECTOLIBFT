@@ -6,7 +6,7 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 13:36:27 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/10/08 14:55:00 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/10/08 14:57:39 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -25,7 +25,6 @@ void	*ft_memset(void *s, int c, size_t n)
 		ptr[i] = letter;
 		i++;
 	}
-	ptr[i] = '\0';
 	return (s);
 }
 /*
