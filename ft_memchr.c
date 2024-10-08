@@ -6,7 +6,7 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 13:55:53 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/10/08 17:02:40 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/10/08 19:37:55 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -16,8 +16,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	unsigned char	*str;
 	size_t			i;
 
-	if (!s || n == 0)
-		return (NULL);
 	str = (unsigned char *) s;
 	i = 0;
 	while (i < n)
