@@ -6,7 +6,7 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:29:19 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/10/05 19:10:43 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/10/08 14:49:38 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,5 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_tolower(int c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strdup(const char *s);
-
 
 #endif
