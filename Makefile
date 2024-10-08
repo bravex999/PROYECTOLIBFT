@@ -28,6 +28,8 @@ SRCS =  ft_memmove.c \
 		ft_strrchr.c \
 		ft_tolower.c \
 		ft_toupper.c \
+		ft_strdup.c \
+		ft_substr.c \
 		
 OBJS = $(SRCS:.c=.o)
 
