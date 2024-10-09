@@ -1,9 +1,10 @@
 #include "libft.h"
 
-static void   my_free(char **arr)
+static void	my_free(char **arr)
 {
-    int i = 0;
-    while (arr[i])
+	int i = 0;
+
+	while (arr[i])
     {
         free(arr[i]);
         i++;
@@ -13,9 +14,13 @@ static void   my_free(char **arr)
 
 static int     counter(const char *s, char c)
 {
-    int count = 0;
-    int in_word = 0;
-    while (*s)
+    int count;
+    int in_word ;
+    
+	count = 0;
+	in_word = 0;
+
+	while (*s)
     {
         if (*s != c && in_word == 0)
         {
@@ -35,9 +40,11 @@ char    **ft_split(char const *s, char c)
     char    *start;
     int     i;
 
-    if (!s) return (NULL);
+    if (!s)
+		return (NULL);
     result = ft_calloc(counter(s, c) + 1, sizeof(char *));
-    if (!result) return (NULL);
+    if (!result)
+		return (NULL);
     i = 0;
     while (*s)
     {
@@ -50,6 +57,7 @@ char    **ft_split(char const *s, char c)
             if (!result[i++])
                 return (my_free(result), NULL);
         }
+		if (*s)
         s++;
     }
     result[i] = NULL;
@@ -67,7 +75,5 @@ int main()
         printf("%s\n", result[i]);
         i++;
     }
-
-    my_free(result);  // Asegúrate de liberar la memoria después
-    return 0;
+	return 0;
 }
