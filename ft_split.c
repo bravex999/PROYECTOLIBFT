@@ -45,10 +45,19 @@ static int	counter(const char *s, char c)
 	return (count);
 }
 
+static char	*get_word(char const *s, char c)
+{
+	char	*start;
+
+	start = (char *)s;
+	while (*s && *s != c)
+		s++;
+	return (ft_substr(start, 0, s - start));
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**result;
-	char	*start;
 	int		i;
 
 	if (!s)
@@ -61,12 +70,11 @@ char	**ft_split(char const *s, char c)
 	{
 		if (*s != c)
 		{
-			start = (char *)s;
-			while (*s && *s != c)
-				s++;
-			result[i] = ft_substr(start, 0, s - start);
+			result[i] = get_word(s, c);
 			if (!result[i++])
 				return (my_free(result), NULL);
+			while (*s && *s != c)
+				s++;
 		}
 		if (*s)
 			s++;
@@ -74,6 +82,7 @@ char	**ft_split(char const *s, char c)
 	result[i] = NULL;
 	return (result);
 }
+
 /*
 int main() 
 {
