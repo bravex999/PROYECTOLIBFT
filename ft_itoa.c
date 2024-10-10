@@ -6,58 +6,61 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:54:34 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/10/10 16:28:41 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/10/10 17:19:00 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 static int	ft_numlen(int n)
 {
-	int	len;
+	int		len;
+	long	nb;
 
+	nb = n;
 	len = 0;
-	if (n <= 0)
-		len++;
-	while (n != 0 )
+	if (nb <= 0)
+		len++;  // Para el signo negativo o el '0'
+	while (nb != 0)
 	{
-		n /= 10;
+		nb /= 10;
 		len++;
 	}
 	return (len);
 }
 
-char	*ft_itoa(int n)
+static void	ft_convert(char *str, long nb, int len)
 {
-	int			len;
-	char		*num;
-	const char	*digits;
-	long		nb;
-
-	digits = "0123456789";
-	nb = n;
-	len = ft_numlen(n);
-	num = (char *)calloc(len + 1, sizeof(char));
-	if (!num)
-		return (NULL);
+	str[len] = '\0';
 	if (nb == 0)
-	{
-		num[0] = '0';
-		num[1] = '\0';
-		return (num);
-	}
+		str[0] = '0';
 	if (nb < 0)
 	{
-		num[0] = '-';
+		str[0] = '-';
 		nb = -nb;
 	}
-	num [len] = '\0';
 	while (nb > 0)
 	{
-		num[--len] = digits[nb % 10];
+		str[--len] = (nb % 10) + '0';
 		nb /= 10;
 	}
-	return (num);
 }
+
+char	*ft_itoa(int n)
+{
+	int		len;
+	char	*str;
+	long	nb;
+
+	nb = n;
+	len = ft_numlen(n);
+	str = (char *)malloc((len + 1) * sizeof(char));
+	if (!str)
+		return (NULL);
+	ft_convert(str, nb, len);
+	return (str);
+}
+
+
 /*
 int main(void)
 {
