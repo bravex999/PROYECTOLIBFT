@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/10 16:07:39 by chnaranj          #+#    #+#             */
+/*   Updated: 2024/10/10 16:07:41 by chnaranj         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
@@ -11,7 +23,7 @@ void	ft_putendl_fd(char *s, int fd)
 /*
 int	main(void)
 {
-	ft_putendl_fd("Hola, mundo!", 1); // Imprime "Hola, mundo!" seguido de un salto de línea
-	ft_putendl_fd(NULL, 1);           // No imprime nada porque s es NULL
+	ft_putendl_fd("Hola, mundo!", 1); 
+	ft_putendl_fd(NULL, 1);           
 	return (0);
 }*/
