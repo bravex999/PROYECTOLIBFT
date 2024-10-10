@@ -18,7 +18,7 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
     }
     return (str);
 }
-
+/*
 int main(void)
 {
     char original[] = "hola, mundo!";
@@ -37,5 +37,5 @@ int main(void)
 
     free(modificada); // Liberar la memoria asignada
     return 0;
-}
+}*/
 

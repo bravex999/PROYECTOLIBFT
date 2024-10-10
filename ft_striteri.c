@@ -15,7 +15,7 @@ void ft_striteri(char *s, void (*f)(unsigned int, char*))
         i++;
     }
 }
-
+/*
 int main(void)
 {
     char str[] = "hola, mundo!";
@@ -30,5 +30,5 @@ int main(void)
     ft_striteri(str, to_uppercase);
     printf("%s\n", str);
     return 0;
-}
+}*/
 
