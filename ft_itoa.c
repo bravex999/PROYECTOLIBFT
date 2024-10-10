@@ -6,7 +6,7 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:54:34 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/10/10 17:19:00 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/10/10 17:50:07 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -19,7 +19,7 @@ static int	ft_numlen(int n)
 	nb = n;
 	len = 0;
 	if (nb <= 0)
-		len++;  // Para el signo negativo o el '0'
+		len++;
 	while (nb != 0)
 	{
 		nb /= 10;
@@ -59,8 +59,6 @@ char	*ft_itoa(int n)
 	ft_convert(str, nb, len);
 	return (str);
 }
-
-
 /*
 int main(void)
 {
