@@ -5,7 +5,7 @@ static int	ft_numlen(int n)
 	int len = 0;
 
 	if (n <= 0)
-		len++; // Contar el signo negativo o el cero
+		len++; 
 	while (n)
 	{
 		n /= 10;
@@ -39,13 +39,11 @@ char	*ft_itoa(int n)
 	}
 	return (num); 
 }
-
-#include "libft.h"
-
+/*
 int main(void)
 {
     ft_putendl_fd(ft_itoa(-2147483648), 1);
     ft_putendl_fd(ft_itoa(0), 1);
     ft_putendl_fd(ft_itoa(12345), 1);
     return 0;
-}
+}*/
