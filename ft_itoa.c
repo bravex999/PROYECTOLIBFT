@@ -1,11 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/10 15:54:34 by chnaranj          #+#    #+#             */
+/*   Updated: 2024/10/10 16:04:39 by chnaranj         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "libft.h"
 
 static int	ft_numlen(int n)
 {
-	int len = 0;
+	int	len;
 
+	len = 0;
 	if (n <= 0)
-		len++; 
+		len++;
 	while (n)
 	{
 		n /= 10;
@@ -16,13 +28,15 @@ static int	ft_numlen(int n)
 
 char	*ft_itoa(int n)
 {
-	int		len;
-	char	*num;
-	const char *digits = "0123456789";
-	long	nb = n; 
+	int			len;
+	char		*num;
+	const char	*digits;
+	long		nb;
 
+	digits = "0123456789";
+	nb = n;
 	len = ft_numlen(n);
-	num = (char *)calloc(len + 1, sizeof(char)); 
+	num = (char *)calloc(len + 1, sizeof(char));
 	if (!num)
 		return (0);
 	if (nb == 0)
@@ -37,7 +51,7 @@ char	*ft_itoa(int n)
 		num[--len] = digits[nb % 10];
 		nb /= 10;
 	}
-	return (num); 
+	return (num);
 }
 /*
 int main(void)
