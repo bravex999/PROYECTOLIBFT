@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -18,7 +18,7 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-/*
+
 int main(void)
 {
 	int c;
@@ -28,4 +28,4 @@ int main(void)
 	result = ft_isprint(c);
 	write(1, &(char){result + '0'}, 1);
 	return (0);
-}*/
+}

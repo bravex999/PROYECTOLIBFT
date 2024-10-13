@@ -9,9 +9,7 @@
 /*   Updated: 2024/09/30 16:28:50 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <strings.h>
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
