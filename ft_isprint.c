@@ -6,7 +6,7 @@
 /*   By: chnaranj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 11:32:09 by chnaranj          #+#    #+#             */
-/*   Updated: 2024/09/30 16:33:36 by chnaranj         ###   ########.fr       */
+/*   Updated: 2024/10/14 11:22:48 by chnaranj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-
+/*
 int main(void)
 {
 	int c;
@@ -28,4 +28,4 @@ int main(void)
 	result = ft_isprint(c);
 	write(1, &(char){result + '0'}, 1);
 	return (0);
-}
+}*/
