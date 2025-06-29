@@ -37,13 +37,3 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	}
 	return (dest);
 }
-/*
-int main ()
-{
-	char src[] = "hola como estas";
-	char dest[25];
-	size_t n = 4;
-	printf("%s",((char *) ft_memmove(dest, src, n)));
-	return 0;
-}*/
-
